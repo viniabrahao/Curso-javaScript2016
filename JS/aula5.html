@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Aula 5 JS</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<style type="text/css">
+			.h1Mouse
+			{
+				font-family: Arial,Helvetica, sans-serif;
+				font-size: 24px;
+				color: #0F0;
+			}
+			.h1MouseOver
+			{
+				font-family: "Times New Roman",Times,Serif;
+				font-size:16px;
+				color:#F00
+			}
+		</style>
+</head>
+	<script type="text/javascript">
+	function changeOver(){
+		document.getElementById("myElement").className = "h1MouseOver";
+	}
+	function changeOut(){
+		document.getElementById("myElement").className = "h1Mouse";
+	}
+	</script>
+	<body>
+		<h1 id="myElement" name="myElement" class="h1Mouse" onMouseOver="changeOver();" onMouseOut="changeOut();">Linha que reage ao mouse!</h1>
+		<br / >
+	</body>
+</html>

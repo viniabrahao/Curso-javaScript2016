@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 25 JS</title>
+
+</head>
+<body>
+	<p>
+		<script type="text/javascript">
+			function teste(){
+				var fruits = new Array();
+				fruits[0] = "maca";
+				fruits[1] = "limao";
+				fruits[2] = "laranja";
+				fruits[3] = "morango";
+				alert(fruits.length);
+			}
+			function teste2(){
+				var cars = ["Fiat","Ford"];
+				var cars2 = ["Ferrari","BMW","Audi"];
+				var carsFinal = cars.concat(cars2);
+
+				var i;
+				var out = "";
+				for(i = 0; i < carsFinal.length; i++){
+					out = out + carsFinal[i]  + "<br>";
+				}
+				document.getElementById("demo").innerHTML = out;
+			}
+		</script>
+	</p>
+	<p><button onclick="teste()">Clique aqui</button></p>
+	<p><button onclick="teste2()">Clique aqui2</button></p>
+	
+	<br>
+	<p><span id="demo" name="demo">Resultado</span></p>
+</body>
+</html>

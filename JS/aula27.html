@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 25 JS</title>
+
+</head>
+<body>
+	<p>
+		<script type="text/javascript">
+			function teste(color1,color2,callback){
+				alert("Cor favorita" + color1 + " " + color2);
+				callback();
+			}
+		</script>
+	</p>
+	<p><button onclick="teste('Green','Blue',function(){alert('... todas as cores.');})">Clique aqui</button></p>
+	<p><button onclick="teste2()">Clique aqui2</button></p>
+	
+	<br>
+	<p><span id="demo" name="demo">Resultado</span></p>
+</body>
+</html>
